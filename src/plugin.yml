@@ -1,0 +1,7 @@
+name: GameRules
+main: com.ulfric.gamerules.GameRules
+version: 1.0.0
+author: Packet
+website: https://luckyprison.com
+database: false
+description: Sets specified gamerules

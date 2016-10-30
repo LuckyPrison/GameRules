@@ -9,6 +9,7 @@ import java.util.Map;
 
 import org.bukkit.Bukkit;
 import org.bukkit.World;
+import org.bukkit.configuration.Configuration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -43,7 +44,7 @@ public final class GameRules extends JavaPlugin implements Listener {
 
 				try (Reader reader = Files.newBufferedReader(path))
 				{
-					YamlConfiguration configuration = YamlConfiguration.loadConfiguration(reader);
+					Configuration configuration = YamlConfiguration.loadConfiguration(reader);
 
 					for (String key : configuration.getKeys(false))
 					{
